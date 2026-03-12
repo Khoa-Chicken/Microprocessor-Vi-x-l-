@@ -1,4 +1,4 @@
-# Microprocessor-Vi-x-l-
+# Microprocessor
 - This course covers microprocessor architecture, microcontroller structure, memory systems, interfacing, data communication, and Assembly/C programming. Upon completion, students can analyze, design, and program microcontroller-based systems, mastering interfacing and communication techniques for practical control applications.
 - Course outline: 
 + Fundamentals of microprocessor architecture: CPU (architecture, classification), memories (ROM and RAM, byte ordering in memory), peripherals, system buses, addressing decoders, timing specifications. 
