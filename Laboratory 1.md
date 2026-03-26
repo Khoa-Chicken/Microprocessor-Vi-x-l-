@@ -117,6 +117,36 @@ L3: <br>
  <img width="913" height="835" alt="image" src="https://github.com/user-attachments/assets/f289d766-c6b2-4d17-aa1c-f87e6d14a117" />
  <img width="610" height="282" alt="image" src="https://github.com/user-attachments/assets/3e253ca6-e202-40d2-8c6e-0438dcf281e2" />
 
+ _EXERCISE 5:_  
+ a) Connect PA0 to a single switch and PA1 to a single LED on the LED block (note: same port).  
+ b) Write a program to turn ON the LED when the switch is pressed, and turn it OFF when the switch is released.
+
+**MAIN:** <br>
+**.ORG 0** <br>
+CBI DDRA, 0 <br>
+SBI PORTA, 0 <br>
+SBI DDRA, 1 <br>
+**L1:** <br>
+SBIC PINA, 0 <br>
+RJMP TAT_LED <br>
+**BAT_LED:** <br>
+SBI PORTA, 1 <br>
+**RJMP L1** <br>
+**TAT_LED:** <br>
+CBI PORTA, 1 <br>
+**RJMP L1** <br>
+**TH1: PA0 = 0 - SWITCH ON** <BR>
+<img width="441" height="156" alt="image" src="https://github.com/user-attachments/assets/45e66a3f-a6fc-4d98-bdbc-fef346ba3d00" />
+<img width="1170" height="321" alt="image" src="https://github.com/user-attachments/assets/889c6916-39ba-4b61-af8d-db35084ffc82" /> <BR>
+**TH2: PA0 = 1 - SWITCH OFF** <BR>
+<img width="440" height="152" alt="image" src="https://github.com/user-attachments/assets/a514770d-e7a6-4fcc-a744-83a50df1a7a3" />
+<img width="1194" height="327" alt="image" src="https://github.com/user-attachments/assets/a8c3af7b-2dce-4d8a-b4b4-401e31ad19bf" />
+
+
+
+
+
+
 
 
 
